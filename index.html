@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:300,400&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+	<header class="main">
+		<div class="container">
+			<div class="header__image">
+				<img id="woman-wt" src="img/woman.png" alt="">
+			</div>
+			<!-- /.header__image -->
+			<div class="header-text">
+				<h1 class="header-title">Имплантация зубов</h1>
+				<div class="header-subtitle">в Санкт-Петербурге</div>
+				<div class="tagline">
+					<img src="img/tooth--1-.png" alt="tooth">
+					<div class="tagline-text">
+						Имплантированный зуб <br>не отличить от настоящего!
+					</div>
+				</div>
+				<button class="button">Записаться на осмотр</button>
+				<button class="button button-o">Посмотреть видео</button>
+			</div>
+			<!-- /.header-text -->
+		</div>
+		<!-- <img src="img/with-tooth.png" alt="woman" id="woman-wt"> -->
+	</header>
+	<script>
+		window.onload = function() {
+			var img = document.getElementById("woman-wt")
+			img.onmouseover = function() {
+				img.setAttribute("src", "img/with-tooth.png")
+				img.style.cursor = "pointer"
+			}
+			img.onmouseout = function() {
+				img.setAttribute("src", "img/woman.png")
+			}
+		}
+	</script>
+</body>
+</html>
