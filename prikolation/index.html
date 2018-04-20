@@ -44,9 +44,8 @@
 				  FrontLeftTooth   = document.getElementById("tooth-2"),
 				  FrontRightTooth  = document.getElementById("tooth-3"),
 				  RightTooth       = document.getElementById("tooth-4"),
-				  offset           = 0,
 				  toothList        = [leftTooth, FrontLeftTooth, FrontRightTooth, RightTooth]
-
+			var drop = dropping();
 /*			img.onmouseover = function() {
 				img.setAttribute("src", "img/with-tooth.png");
 				img.style.cursor = "pointer";
@@ -55,14 +54,18 @@
 				img.setAttribute("src", "img/woman.png");
 			}*/
 			for (let i = 0; i < toothList.length; i++) {
-				toothList[i].onmousemove = dropping;
+				toothList[i].onmousemove = drop;
 			}
 
 
 			function dropping() {
-				this.style.transform = "translateY(" + offset + "px)";
-				offset++;
+				var offset = 1;
+				return function() {
+					this.style.transform = "translateY(" + offset + "px)";	
+				 	return offset++;
+				}
 			}
+			
 		}
 	</script>
 </body>
