@@ -1,4 +1,8 @@
 @media screen and (min-width: 1200px) {
+  body {
+    overflow-y: hidden;
+  }
+
   .header__image {
     -webkit-transform: translateX(823px);
             transform: translateX(823px);
@@ -42,6 +46,10 @@
   }
 }
 @media screen and (max-width: 768px) {
+  body {
+    overflow-y: auto;
+  }
+
   .header__image {
     display: none;
   }
