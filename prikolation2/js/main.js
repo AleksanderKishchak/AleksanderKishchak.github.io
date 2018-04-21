@@ -12,10 +12,6 @@ window.onload = function() {
 					offsetGlobal         = 0,
 					documentHeight       = document.documentElement.clientHeight;
 
-			// leftTooth.onmousemove = dropLeftTooth;
-			// FrontLeftTooth.onmousemove = dropFrontLeftTooth;
-			// FrontRightTooth.onmousemove = dropFrontRightTooth;
-			// RightTooth.onmousemove = dropRightTooth;
 			dropButton.onclick = oops;
 
 			window.onresize = function() {
@@ -39,19 +35,6 @@ window.onload = function() {
 						dropRightTooth.call(rightTooth);
 					}, 1500);
 				}, 10)
-			/*	setInterval(function() {
-					dropLeftTooth.call(leftTooth);
-					setTimeout(function() {
-						dropFrontLeftTooth.call(frontLeftTooth);
-
-					}, 500);
-					setTimeout(function() {
-						dropFrontRightTooth.call(frontRightTooth);
-					}, 1000);
-					setTimeout(function() {
-						dropRightTooth.call(rightTooth);
-					}, 1500);
-				}, 20);*/
 			}
 
 			function dropping() {
