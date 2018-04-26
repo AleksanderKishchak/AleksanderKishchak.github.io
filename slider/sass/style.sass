@@ -1,0 +1,33 @@
+body
+	font-family: 'Bad Script', sans-serif
+	font-size: 30px
+.summer
+	display: flex
+	height: 100vh
+.item
+	color: #fff
+	flex-basis: 25%
+	display: flex
+	justify-content: center
+	align-items: center
+	transition: all .2s ease-in-out
+	&:hover
+		flex-basis: 100%
+	text-shadow: 0 0 10px #000
+.item-1
+	background: url(../img/1.jpg) center center no-repeat
+	background-size: cover
+.item-2
+	background: url(../img/2.jpg) center center no-repeat
+	background-size: cover
+.item-3
+	background: url(../img/3.jpg) center center no-repeat
+	background-size: cover
+.item-4
+	background: url(../img/4.jpg) center center no-repeat
+	background-size: cover
+
+
+@media screen and (max-width: 640px)
+	.summer
+		flex-direction: column

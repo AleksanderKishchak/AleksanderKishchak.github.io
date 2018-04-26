@@ -1,0 +1,62 @@
+body {
+  font-family: "Bad Script", sans-serif;
+  font-size: 30px;
+}
+
+.summer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.item {
+  color: #fff;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-shadow: 0 0 10px #000;
+}
+.item:hover {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.item-1 {
+  background: url(../img/1.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.item-2 {
+  background: url(../img/2.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.item-3 {
+  background: url(../img/3.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.item-4 {
+  background: url(../img/4.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 640px) {
+  .summer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
