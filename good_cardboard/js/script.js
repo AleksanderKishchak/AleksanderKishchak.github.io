@@ -41,10 +41,17 @@ $(document).ready(function() {
     nextArrow: '<button class="button-next"></button>',
     responsive: [
     {
-      breakpoint: 577,
+      breakpoint: 769,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 993,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
       }
     }
   ]
