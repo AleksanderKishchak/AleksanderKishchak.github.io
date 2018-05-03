@@ -19,7 +19,16 @@ $(document).ready(function() {
     slidesToShow: 4,
     asNavFor: '.production-slider',
     focusOnSelect: true,
-    arrows: true
+    arrows: true,
+    responsive: [
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
   });
   $('.feedback-slider').slick({
     infinite: true,
@@ -29,23 +38,51 @@ $(document).ready(function() {
     autoplaySpeed: 3000,
     arrows: true,
     prevArrow: '<button class="button-prev"></button>',
-    nextArrow: '<button class="button-next"></button>'
+    nextArrow: '<button class="button-next"></button>',
+    responsive: [
+    {
+      breakpoint: 577,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
   });
   $('.main-slider').slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     centerPadding: '0'
-  })
+  });
 
 
 	$(".header-contacts__button").on('click', function(e) {
-	  $(".overlay").show(1000);
+	  $(".overlay").show();
 	});
 	$(".popup-close").on('click', function(e) {
-	    $(".overlay").hide(1000);
+	    $(".overlay").hide();
 	});
+    $(document).on('scroll', function() {
+        var w_top = $(window).scrollTop();
+        if (w_top >= 3) {
+            $('.nav-main').css('opacity', '0.8');
+        } else {
+            $('.nav-main').css('opacity', '1');
+        }
+    });
+    $("#nav-main").on("click","a", function (event) {
+        event.preventDefault();
+        var offset = 44;
+        var id  = $(this).attr('href'),
+        //узнаем высоту от начала страницы до блока на который ссылается якорь
+            top = $(id).offset().top;
+        //анимируем переход на расстояние - top за 1500 мс
+        $('body,html').animate({
+            scrollTop: top - offset
+        }, 500);
+    });
 });

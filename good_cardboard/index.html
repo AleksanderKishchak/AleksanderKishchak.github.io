@@ -29,23 +29,77 @@
   </head>
 
   <body>
+    <nav class="nav-main" id="nav-main">
+      <div class="container">
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#main">О компании</a>
+          </li>
+          <!-- /.nav-list__item -->
+        
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#features">преимущества</a>
+          </li>
+          <!-- /.nav-list__item -->
+        
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#production">производство</a>
+          </li>
+          <!-- /.nav-list__item -->
+        
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">склад</a>
+          </li>
+          <!-- /.nav-list__item -->
+        
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#products">Продукция</a>
+          </li>
+          <!-- /.nav-list__item -->
+        
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#clients">наши клиенты</a>
+          </li>
+          <!-- /.nav-list__item -->
+        
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#feedback">Сертификаты</a>
+          </li>
+          <!-- /.nav-list__item -->
+        
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Отзывы</a>
+          </li>
+          <!-- /.nav-list__item -->
+        
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#contacts">контакты</a>
+          </li>
+          <!-- /.nav-list__item -->
+        
+        </ul>
+        <!-- /.nav-list -->
+      </div>
+    </nav>
+    <!-- /.main-nav -->
+
     <header class="header">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-4">
-            <div class="header__logo">
-              <img src="img/header/header-logo.png" alt="Добрый картон">
-            </div>
+          <div class="col-3 col-md-4">
+            <div class="header__logo"></div>
             <!-- /.header__logo -->
           </div>
           <!-- /.col-md-4 -->
-          <div class="col-8">
+          <div class="col-9 col-md-8">
             <div class="header-contacts">
-              <div class="header-contacts__phone">8 (347) 271-54-28</div>
-              <div class="header-contacts__phone">8 (937) 363-30-00</div>
+              <div class="header-contacts__phones">
+                <div class="header-contacts__phone">8 (347) 271-54-28</div>
+                <div class="header-contacts__phone">8 (937) 363-30-00</div>
+              </div>
               <button class="header-contacts__button button">
                 <img src="img/header/phone-icon.png" alt="Телефон">
-                Заказать звонок
+                <span class="hidden-mobile">Заказать звонок</span>
               </button>
             </div>
             <!-- /.header__contacts -->
@@ -59,16 +113,16 @@
     <!-- /.header -->
     
     <div class="main-slider">
-      <section class="main main-1">
+      <section id="main" class="main dark-bg main-1">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-md-5">
-              <div class="main-image wow">
+            <div class="col-12 col-md-5">
+              <div class="main-image wow hidden-mobile">
                 <img src="img/main/main-image.png" alt="Картон">
               </div>
             </div>
             <!-- /.col-md-5 -->
-            <div class="col-md-7">
+            <div class="col-12 col-md-7">
               <div class="main-text">
                 <div class="main-text__title">Производство упаковки из гофрокартона</div>
                 <!-- /.main-text__title -->
@@ -97,11 +151,11 @@
       </section>
       <!-- /.main -->
       
-      <section class="main main-2">
+      <section class="main dark-bg main-2">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-5">
-              <div class="main-image wow">
+              <div class="main-image wow hidden-mobile">
                 <img src="img/main/main-image-2.png" alt="Картон">
               </div>
             </div>
@@ -137,7 +191,7 @@
     </div>
     <!-- /.main-slider -->
 
-    <section class="features">
+    <section class="features" id="features">
       <div class="container">
         <div class="numbers">
           <div class="numbers-block">
@@ -264,12 +318,12 @@
     </section>
     <!-- /.features -->
 
-    <section class="products">
+    <section class="products" id="products">
       <div class="container">
         <h2 class="section-title">наша Продукция</h2>
         <!-- /.section-title -->
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <div class="products-block">
               <div class="products-img">
                 <img class="products-block__img" src="img/products/img1.jpg" alt="#">
@@ -286,7 +340,7 @@
           </div>
           <!-- /.col-6 -->
 
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <div class="products-block">
               <div class="products-img">
                 <img class="products-block__img" src="img/products/img2.jpg" alt="#">
@@ -307,7 +361,7 @@
 
 
         <div class="row">
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <div class="products-block">
               <div class="products-img">
                 <img class="products-block__img" src="img/products/img4.jpg" alt="#">
@@ -324,7 +378,7 @@
           </div>
           <!-- /.col-6 -->
 
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <div class="products-block">
               <div class="products-img">
                 <img class="products-block__img" src="img/products/img3.jpg" alt="#">
@@ -347,11 +401,28 @@
     </section>
     <!-- /.products -->
 
-    <section class="production">
+    <section class="offer dark-bg">
+      <div class="container">
+        <h2 class="offer-title">Получите индивидуальное предложение<span class="offer-title_small">на производство и поставку изделий</span></h2>
+        <!-- /.offer-title -->
+        <div class="offer-form">
+          <label for="" class="offer-form__label">Введите ваш номер телефона:</label>
+          <input type="text" class="form__input offer-form__input" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ">
+          <button type="submit" class="button button_big offer-form__button">Оставить заявку!</button>
+          <!-- /.button offer-form__button -->
+          <small class="offer-form__note">*Минимальный заказ 500шт</small>
+        </div>
+        <!-- /.offer-form -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.offer -->
+
+    <section class="production" id="production">
       <div class="container">
         <div class="row">
-          <div class="col-7">
-            <div class="production-slider">
+          <div class="col-12 col-lg-7">
+            <div class="production-slider hidden-mobile">
               <div class="production-slider__item">
                 <img class="production-slider__img" src="img/production/slider/img-1.jpg" alt="foto">
               </div>
@@ -381,31 +452,31 @@
             <div class="production-slider-thumb">
               <div class="production-slider-thumb__item">
                 <div class="img-mask"></div>
-                <img src="img/production/slider/thumb/thumbnails-1.jpg" alt="thumb">
+                <img src="img/production/slider/img-1.jpg" alt="thumb">
               </div>
               <!-- /.production-slider-thumb__item -->
 
               <div class="production-slider-thumb__item">
                 <div class="img-mask"></div>
-                <img src="img/production/slider/thumb/thumbnails-2.jpg" alt="thumb">
+                <img src="img/production/slider/img-2.jpg" alt="thumb">
               </div>
               <!-- /.production-slider-thumb__item -->
 
               <div class="production-slider-thumb__item">
                 <div class="img-mask"></div>
-                <img src="img/production/slider/thumb/thumbnails-3.jpg" alt="thumb">
+                <img src="img/production/slider/img-3.jpg" alt="thumb">
               </div>
               <!-- /.production-slider-thumb__item -->
 
               <div class="production-slider-thumb__item">
                 <div class="img-mask"></div>
-                <img src="img/production/slider/thumb/thumbnails-4.jpg" alt="thumb">
+                <img src="img/production/slider/img-4.jpg" alt="thumb">
               </div>
               <!-- /.production-slider-thumb__item -->
 
               <div class="production-slider-thumb__item">
                 <div class="img-mask"></div>
-                <img src="img/production/slider/thumb/thumbnails-5.jpg" alt="thumb">
+                <img src="img/production/slider/img-5.jpg" alt="thumb">
               </div>
               <!-- /.production-slider-thumb__item -->
               
@@ -413,7 +484,7 @@
             <!-- /.production-slider-thumb -->
           </div>
           <!-- /.col-7 -->
-          <div class="col-5">
+          <div class="col-12 col-lg-5 order-first order-lg-last">
             <div class="production-text">
               <div class="production-text__title">Производство</div>
               <!-- /.production-text__title -->
@@ -430,33 +501,33 @@
     </section>
     <!-- /.production -->
 
-    <section class="clients">
+    <section class="clients" id="clients">
       <div class="container">
         <h2 class="section-title clients-title">Наши клиенты</h2>
         <!-- /.section-title -->
         <div class="row">
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div class="clients-block">
               <img src="img/clients/img-1.png" alt="Восход" class="clients-block__img">
             </div>
             <!-- /.clients-block -->
           </div>
 
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div class="clients-block">
               <img src="img/clients/img-2.png" alt="Стерх" class="clients-block__img">
             </div>
             <!-- /.clients-block -->
           </div>
 
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div class="clients-block">
               <img src="img/clients/img-3.png" alt="Серебряный Снег" class="clients-block__img">
             </div>
             <!-- /.clients-block -->
           </div>
 
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div class="clients-block">
               <img src="img/clients/img-4.png" alt="Авдон" class="clients-block__img">
             </div>
@@ -466,28 +537,28 @@
         </div>
         <!-- /.row -->
         <div class="row">
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div class="clients-block">
               <img src="img/clients/img-5.png" alt="Турбаслинские бройлеры" class="clients-block__img">
             </div>
             <!-- /.clients-block -->
           </div>
 
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div class="clients-block">
               <img src="img/clients/img-6.png" alt="Башкирское мороженое" class="clients-block__img">
             </div>
             <!-- /.clients-block -->
           </div>
 
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div class="clients-block">
               <img src="img/clients/img-7.png" alt="Аллат" class="clients-block__img">
             </div>
             <!-- /.clients-block -->
           </div>
 
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div class="clients-block">
               <img src="img/clients/img-8.png" alt="Альтернатива" class="clients-block__img">
             </div>
@@ -497,28 +568,28 @@
         </div>
         <!-- /.row -->
         <div class="row">
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div class="clients-block">
               <img src="img/clients/img-9.png" alt="Индюшкин" class="clients-block__img">
             </div>
             <!-- /.clients-block -->
           </div>
 
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div class="clients-block">
               <img src="img/clients/img-10.png" alt="Салаватстекло" class="clients-block__img">
             </div>
             <!-- /.clients-block -->
           </div>
 
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div class="clients-block">
               <img src="img/clients/img-11.png" alt="Молочный фермер" class="clients-block__img">
             </div>
             <!-- /.clients-block -->
           </div>
 
-          <div class="col-3">
+          <div class="col-6 col-md-3">
             <div class="clients-block">
               <img src="img/clients/img-12.png" alt="Меги" class="clients-block__img">
             </div>
@@ -531,59 +602,61 @@
     </section>
     <!-- /.clients -->
 
-    <section class="feedback">
+    <section class="feedback" id="feedback">
       <div class="container">
         <h2 class="section-title feedback-title">Отзывы о сотрудничестве</h2>
         <!-- /.section-title -->
+
         <div class="feedback-slider">
+
           <div class="feedback__item">
             <div class="feedback__img">
               <img src="img/feedback/feedback-1.jpg" alt="Отзыв">
             </div>
             <!-- /.feedback__img -->
-            
           </div>
           <!-- /.feedback__item -->
+
           <div class="feedback__item">
             <div class="feedback__img">
               <img src="img/feedback/feedback-2.jpg" alt="Отзыв">
             </div>
             <!-- /.feedback__img -->
-            
           </div>
           <!-- /.feedback__item -->
+
           <div class="feedback__item">
             <div class="feedback__img">
               <img src="img/feedback/feedback-3.jpg" alt="Отзыв">
             </div>
             <!-- /.feedback__img -->
-            
           </div>
           <!-- /.feedback__item -->
+
           <div class="feedback__item">
             <div class="feedback__img">
               <img src="img/feedback/feedback-1.jpg" alt="Отзыв">
             </div>
             <!-- /.feedback__img -->
-            
           </div>
           <!-- /.feedback__item -->
+
           <div class="feedback__item">
             <div class="feedback__img">
               <img src="img/feedback/feedback-2.jpg" alt="Отзыв">
             </div>
             <!-- /.feedback__img -->
-            
           </div>
           <!-- /.feedback__item -->
+
           <div class="feedback__item">
             <div class="feedback__img">
               <img src="img/feedback/feedback-3.jpg" alt="Отзыв">
             </div>
             <!-- /.feedback__img -->
-            
           </div>
           <!-- /.feedback__item -->
+          
         </div>
         <!-- /.feedback-slider -->
       </div>
@@ -613,10 +686,8 @@
     </div>    
 
 
-
     <!-- Bootstrap core JavaScript ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
     <script src="js/wow.min.js"></script>
     <script src="slick/slick.min.js"></script>
