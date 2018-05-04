@@ -26,6 +26,8 @@
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Yandex Maps API -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   </head>
 
   <body>
@@ -505,7 +507,7 @@
       <div class="container">
         <h2 class="section-title clients-title">Наши клиенты</h2>
         <!-- /.section-title -->
-        <div class="row">
+        <div class="row no-gutters">
           <div class="col-6 col-md-4 col-lg-3">
             <div class="clients-block">
               <img src="img/clients/img-1.png" alt="Восход" class="clients-block__img">
@@ -657,6 +659,52 @@
       <!-- /.container -->
     </section>
     <!-- /.feedback -->
+
+    <section class="contacts">
+      <div class="contacts-block">
+        <div class="contacts-block__addresses">
+          <div class="contacts-block__address">
+            <div class="contacts-block__title">Адрес офиса</div>
+            <!-- /.contacts-block__title -->
+            г. Уфа, Проспект октября, 46
+          </div>
+          <div class="contacts-block__address">
+            <div class="contacts-block__title">Адрес склада</div>
+            <!-- /.contacts-block__title -->
+            г. Уфа, ул. Майкопская, 65/2
+          </div>
+        </div>
+        <!-- /.contacts-block__adress -->
+        <div class="contacts-block__phones">
+          <div class="contacts-block__title">Тел. отдела продаж:</div>
+          <!-- /.contacts-block__title -->
+          <a href="tel:+83472715428">8 (347) 271-54-28</a><br>
+          <a href="tel:89373633000">8 (937) 363-30-00</a>
+        </div>
+        <!-- /.contacts-block__phones -->
+        <button class="button contacts-block__button">Заказать звонок</button>
+        <div class="contacts-block__email">
+          <div class="contacts-block__title">Е-mail</div>
+          <!-- /.contacts-block__title -->
+          <a href="mailto:urals.karton@gmail.com">urals.karton@gmail.com</a>
+        </div>
+        <!-- /.contacts-block__email -->
+      </div>
+      <!-- /.contacts-block -->
+      <div class="map" id="map">
+        <script src="js/ymaps.js"></script>
+      </div>
+    </section>
+    <!-- /.contacts -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">&copy; <a href="www.gofra-ural.ru">www.gofra-ural.ru</a> 2016, все права защищены</div>
+        <!-- /.footer-content -->
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
 
     <!-- MODAL WINDOWS -->
     <div class="overlay">

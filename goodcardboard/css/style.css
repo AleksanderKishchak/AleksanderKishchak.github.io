@@ -15,6 +15,22 @@ input {
   outline: none;
 }
 
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutters .col,
+.no-gutters [class*="col-"] {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .section-title {
   font-size: 27px;
   font-weight: 700;
@@ -645,7 +661,7 @@ input {
   align-items: center;
 }
 
-.clients-block img {
+.clients-block__img {
   -webkit-transition: .3s;
   transition: .3s;
   -webkit-filter: grayscale(1);
@@ -702,6 +718,86 @@ input {
 
 .feedback__img img {
   margin: 0 auto;
+}
+
+.contacts {
+  position: relative;
+}
+
+.contacts-block {
+  background: #fff;
+  display: inline-block;
+  padding: 33px 40px 39px 62px;
+  color: #373737;
+  font-weight: 300;
+  position: absolute;
+  top: 14%;
+  left: 16%;
+  z-index: 1;
+}
+
+.contacts-block__title {
+  font-size: 18px;
+  font-family: 'Roboto Medium', sans-serif;
+  margin-bottom: 8px;
+}
+
+.contacts-block__address,
+.contacts-block__phones {
+  margin-bottom: 13px;
+}
+
+.contacts-block__button {
+  margin-bottom: 25px;
+}
+
+.contacts-block__addresses,
+.contacts-block__phones,
+.contacts-block__email {
+  position: relative;
+}
+
+.contacts-block__addresses::before,
+.contacts-block__phones::before,
+.contacts-block__email::before {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 1;
+  left: -33px;
+}
+
+.contacts-block__addresses::before {
+  background: url("../img/contacts/map-icon.png") center center no-repeat;
+}
+
+.contacts-block__phones::before {
+  background: url("../img/contacts/phone-icon.png") center center no-repeat;
+}
+
+.contacts-block__email::before {
+  background: url("../img/contacts/email-icon.png") center center no-repeat;
+}
+
+.map {
+  width: 100%;
+  height: 550px;
+}
+
+.footer {
+  background: #1b1b1b;
+  text-align: center;
+  padding-top: 36px;
+  padding-bottom: 39px;
+}
+
+.footer-content {
+  font-size: 13px;
+  font-weight: 300;
+  opacity: .5;
+  color: #fff;
 }
 
 .overlay {
@@ -890,13 +986,18 @@ input {
   }
 }
 
-/* @media screen and (max-width: 767px) //576-768
-	.section-title
-		font-size: 22px
-		&::after
-			display: none */
-
 @media screen and (max-width: 767px) {
+  .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .no-gutters .col,
+  .no-gutters [class*="col-"] {
+    padding-right: 3px;
+    padding-left: 3px;
+  }
+
   .hidden-mobile {
     display: none;
   }
@@ -1125,6 +1226,12 @@ input {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     margin-bottom: 8px;
+    height: 88px;
+    padding: 10px 20px;
+  }
+
+  .clients-block__img {
+    max-height: 100%;
   }
 
   .feedback {
@@ -1157,5 +1264,27 @@ input {
   .feedback .button-next {
     background: #ff9d00 url("../img/slick-arrow-next_hover.png") center center no-repeat;
     z-index: 1;
+  }
+
+  .contacts {
+    padding: 0 15px 15px 15px;
+  }
+
+  .contacts-block {
+    position: static;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+
+  .contacts-block__addresses::before,
+  .contacts-block__phones::before,
+  .contacts-block__email::before {
+    display: none;
+  }
+
+  .contacts .map {
+    position: static;
+    height: 420px;
   }
 }
