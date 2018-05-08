@@ -1,0 +1,32 @@
+.nav-main
+	background: $text-color-dark
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 1005
+	opacity: 1
+	transition: .2s
+.nav-list
+	padding: 0
+	margin: 10px auto
+	list-style-type: none
+	text-align: center
+	&__item
+		text-align: center
+		display: inline-block
+		padding: 3px 15px 3px 9px
+		border-right: 1px dotted rgba(#fff, .2)
+		height: 25px
+		&:last-child
+			border-right: none
+			padding-right: 0
+	&__link
+		font-size: 12px
+		font-weight: 400
+		text-transform: uppercase
+		color: $text-color-light
+		text-decoration: none
+		transition: .2s
+		&:hover
+			color: darken($text-color-light, 30)

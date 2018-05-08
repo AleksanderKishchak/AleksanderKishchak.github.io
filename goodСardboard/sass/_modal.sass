@@ -1,0 +1,84 @@
+.overlay
+	position: fixed
+	top: 0
+	width: 100%
+	height: 100%
+	display: none
+	background: rgba(0, 0, 0, .4)
+	z-index: 3
+	.popup
+		position: fixed
+		width: 752px
+		background: #fff
+		left: 50%
+		transform: translateX(-50%)
+		top: 100px
+		&-close
+			color: #fff
+			font-size: 35px
+			font-weight: 300
+			position: absolute
+			top: -32px
+			right: -20px
+			cursor: pointer
+			opacity: .8
+			transition: .2s
+			&:hover
+				opacity: 1
+		&-title
+			display: block
+			width: 100%
+			background: $active-color
+			text-transform: uppercase
+			font-size: 21px
+			font-weight: 500
+			line-height: 68px
+			color: $text-color-light
+			text-align: center
+		&-form
+			color: $text-color-light
+			background: url(../img/modal/modal-bg.jpg) center center no-repeat
+			background-size: cover
+			padding: 40px 88px 49px 87px
+			&__header
+				font-size: 30px
+				font-weight: 400
+				line-height: 27px
+				text-align: center
+				padding: 0
+				margin-bottom: 23px
+				span
+					display: block
+					font-size: 24px
+			&__label
+				font-size: 20px;
+				font-weight: 300
+				color: $text-color-light
+				display: block
+				text-align: center
+				margin-bottom: 17px
+			&__input
+				border: none
+				border-radius: 5px
+				font-size: 14px;
+				font-weight: 300;
+				line-height: 42px;
+				color: $text-color-dark
+				padding-left: 18px
+				width: 365px;
+				height: 56px;
+				margin-bottom: 9px
+			&__btn
+				font-size: 15px;
+				font-weight: 500;
+				color: $text-color-light
+				padding-right: 29px
+				padding-left: 29px
+				margin-left: 16px
+			&__note
+				display: block
+				font-size: 14px;
+				font-weight: 300;
+				line-height: 30px;
+				text-align: center
+
