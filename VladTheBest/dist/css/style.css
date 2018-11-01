@@ -5,6 +5,7 @@
 body {
   margin: 0;
   padding: 0;
+  padding-bottom: 20px
   min-height: 100vh;
   font-family: Roboto, Helvetica, sans-serif;
   color: #212121; }
